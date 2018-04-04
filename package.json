@@ -1,0 +1,22 @@
+{
+  "name": "fancy-bookmarks",
+  "version": "0.0.0",
+  "description": "Electron application for fancy management of bookmarks",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DHedgecock/fancy-bookmarks.git"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Dan Hedgecock",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "prettier-standard": "^8.0.0"
+  }
+}
