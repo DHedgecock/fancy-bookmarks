@@ -1,0 +1,8 @@
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+
+import Title from './Title'
+
+storiesOf('Title', module).add('with text', () => (
+  <Title>Storybook Title</Title>
+))

@@ -11,7 +11,7 @@ const NavLink = styled.button``
 const Nav = ({ navigate }) => (
   <NavBar>
     <NavLink onClick={() => navigate('/list')}>List</NavLink>
-    <NavLink onClick={() => navigate('/priority')}>List</NavLink>
+    <NavLink onClick={() => navigate('/priority')}>Priority</NavLink>
   </NavBar>
 )
 

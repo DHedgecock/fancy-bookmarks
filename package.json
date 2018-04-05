@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "webpack": "webpack",
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   "author": "Dan Hedgecock",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addons": "^3.4.0",
+    "@storybook/react": "^4.0.0-alpha.1",
     "babel-jest": "^22.4.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

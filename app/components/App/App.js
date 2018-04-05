@@ -4,19 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import Nav from './Nav'
 import ListScreen from '../ListScreen'
 import PriorityScreen from '../PriorityScreen'
-
-// ========================================================
-// Application theme definition
-// ========================================================
-
-// Fonts - (all fonts will be in rems)
-const fontSizeBase = 0.9375
-
-const theme = {
-  fontFamilySansSerif: 'Arial, Helvetica, sans-serif',
-  fontSizeBase: fontSizeBase + 'rem',
-  h1FontSize: fontSizeBase * 2.5 + 'rem'
-}
+import theme from '../../theme'
 
 // ========================================================
 // Application routing definition
