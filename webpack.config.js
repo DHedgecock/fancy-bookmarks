@@ -1,5 +1,6 @@
 const { resolve } = require('path')
 const nodeExternals = require('webpack-node-externals')
+const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
 
 const PATHS = {
   appEntry: resolve('./app/index.js'),
@@ -29,7 +30,13 @@ module.exports = env => ({
     // Including `appSrc` allows for importing modules relative to /src directory!
     modules: [PATHS.nodeModules, PATHS.appSrc],
     // Alias can be used to point imports to specific modules
-    alias: {}
+    alias: {},
+    plugins: [
+      // 😍💯 Automatically allows resolving requests to directories to filenames that
+      // match the directory name, used for simple import of named component files
+      // without requiring an index.js
+      new DirectoryNamedWebpackPlugin(true)
+    ]
   },
 
   target: 'electron-renderer',
